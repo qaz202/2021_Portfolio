@@ -1,0 +1,600 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@100;300;400;500;700;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Rajdhani:wght@300;400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;400&display=swap');
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'Noto Sans TC', sans-serif;
+    margin: 0;
+}
+
+/* --------------------------navbar */
+
+nav {
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, .1);
+    background-color: #fff;
+    width: 100%;
+    position: fixed;
+    z-index: 1000;
+    top: 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 5px 0;
+}
+
+.navbar-nav {
+    display: flex;
+    font-size: 17px;
+    font-weight: 700;
+    padding-right: 30px;
+}
+
+.collapse {
+    display: flex;
+    align-items: center;
+    padding-left: 30px;
+    letter-spacing: 10px;
+}
+
+.nav-brand {
+    font-size: 18px;
+    font-weight: 400;
+    color: #65bac5;
+}
+
+.nav-brand:hover {
+    color: #EE5840;
+    transition: ease-in-out .2s;
+}
+
+.nav-item {
+    list-style: none;
+    padding-left: 30px;
+    font-size: 17px;
+}
+
+.nav-link {
+    color: #000;
+}
+
+a:link {
+    text-decoration: none;
+}
+
+.nav-link:hover {
+    color: #EE5840;
+    transition: ease-in-out .2s;
+}
+
+.email {
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    font-family: 'Ubuntu', sans-serif;
+    font-weight: 300;
+    font-size: 17px;
+    writing-mode: vertical-rl;
+    margin-right: 50px;
+    color: #000;
+}
+
+.email::after {
+    content: '————————';
+    margin-top: 20px;
+}
+
+/* --------------------------------------header */
+
+
+/* 自我介紹 */
+
+.container {
+    padding: 150px 50px 0;
+    margin: 0 200px;
+}
+
+.co-box {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.co-box1 {
+    display: flex;
+    flex-direction: column;
+}
+
+.header-button {
+    color: #fff;
+}
+
+.introduction {
+    margin-right: 10px;
+}
+
+.face {
+    width: 350px;
+    height: 350px;
+    object-fit: cover;
+    border-radius: 15px;
+    margin: 50px 0;
+}
+
+.co-box1 > h2 {
+    font-size: 70px;
+    font-weight: 800;
+    letter-spacing: 10px;
+    margin: 30px 0 10px 0;
+}
+
+.co-box1 > p {
+    font-size: 17px;
+    font-weight: 300;
+    line-height: 35px;
+    width: 550px;
+    height: 250px;
+}
+
+/* 能力指標 */
+
+.ability {
+    width: 100%;
+    padding: 40px 0;
+    background-color: rgb(245, 245, 245);
+    color: #000;
+}
+
+.self-ability {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+.self-ability>h2 {
+    font-size: 45px;
+    margin: 0 150px 0 20px;
+    letter-spacing: 5px;
+}
+
+h3 {
+    margin: 0;
+}
+
+.ability-ul>li {
+    list-style: none;
+    padding: 10px 0;
+    font-size: 17px;
+    font-weight: 300;
+}
+
+.line {
+    width: 200px;
+    height: 15px;
+    border-radius: 20px;
+    background-color: #dadada;
+}
+
+.flat {
+    padding: 0 70px 0 25px;
+}
+
+.ability-tit {
+    font-weight: 500;
+}
+
+.ability-ul {
+    padding: 0;
+}
+
+/* IL animation code */
+
+@keyframes example {
+    from {width: 5px; height: 15px;}
+    to {width: 180px; height: 15px;}
+}
+
+.IL {
+    width: 5px;
+    height: 15px;
+    border-radius: 20px;
+    background-color: #EE5840;
+    animation-name: example;
+    animation-duration: 1s;
+    animation-timing-function: ease-in-out;
+    animation-fill-mode: forwards;
+    animation-delay: 0.8s;
+}
+
+/* PS animation code */
+
+@keyframes example1 {
+    from {width: 5px; height: 15px;}
+    to {width: 100px; height: 15px;}
+}
+
+.PS {
+    width: 5px;
+    height: 15px;
+    border-radius: 20px;
+    background-color: #EE5840;
+    animation-name: example1;
+    animation-duration: 1s;
+    animation-timing-function: ease-in-out;
+    animation-fill-mode: forwards;
+    animation-delay: 0.8s;
+}
+
+/* XD animation code */
+
+@keyframes example2 {
+    from {width: 5px; height: 15px;}
+    to {width: 170px; height: 15px;}
+}
+
+.XD {
+    width: 5px;
+    height: 15px;
+    border-radius: 20px;
+    background-color: #EE5840;
+    animation-name: example2;
+    animation-duration: 1s;
+    animation-timing-function: ease-in-out;
+    animation-fill-mode: forwards;
+    animation-delay: 0.8s;
+}
+
+/* HT animation code */
+
+@keyframes example3 {
+    from {width: 5px; height: 15px;}
+    to {width: 170px; height: 15px;}
+}
+
+.HT {
+    width: 5px;
+    height: 15px;
+    border-radius: 20px;
+    background-color: #EE5840;
+    animation-name: example3;
+    animation-duration: 1s;
+    animation-timing-function: ease-in-out;
+    animation-fill-mode: forwards;
+    animation-delay: 0.8s;
+}
+
+/* CS animation code */
+
+@keyframes example4 {
+    from {width: 5px; height: 15px;}
+    to {width: 170px; height: 15px;}
+}
+
+.CS {
+    width: 5px;
+    height: 15px;
+    border-radius: 20px;
+    background-color: #EE5840;
+    animation-name: example4;
+    animation-duration: 1s;
+    animation-timing-function: ease-in-out;
+    animation-fill-mode: forwards;
+    animation-delay: 0.8s;
+}
+
+/* JS animation code */
+
+@keyframes example5 {
+    from {width: 5px; height: 15px;}
+    to {width: 50px; height: 15px;}
+}
+
+.JS {
+    width: 5px;
+    height: 15px;
+    border-radius: 20px;
+    background-color: #EE5840;
+    animation-name: example5;
+    animation-duration: 1s;
+    animation-timing-function: ease-in-out;
+    animation-fill-mode: forwards;
+    animation-delay: 0.8s;
+}
+
+/* ------------------------------section */
+
+.activity {
+    padding-top: 100px;
+    font-size: 17px;
+    margin: 0 250px;
+}
+
+.activity > h2 {
+    letter-spacing: 10px;
+    font-size: 70px;
+    font-weight: 800;
+    text-align: center;
+    margin-bottom: 80px;
+}
+
+.ac-box {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.ac-word {
+    background-color: rgb(245, 245, 245);
+    border-left: 10px solid #65bac5;
+    border-bottom-left-radius: 5px;
+    border-top-left-radius: 5px;
+    padding: 30px 70px 30px 30px;
+}
+
+.ac-word>h4 {
+    font-weight: 400;
+}
+
+.ac-photo {
+    display: flex;
+    flex-direction: row;
+}
+
+.ac-img {
+    max-width: 100%;
+    width: 230px;
+    height: 230px;
+    margin-right: 10px;
+    object-fit: cover;
+}
+
+/* ---------------------------project */
+
+.project {
+    padding-top: 200px;
+    margin: 0 250px;
+}
+
+.pro-box {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.pro-photo {
+    overflow: hidden;
+    width: 500px;
+    height: 350px;
+    border-radius: 20px;
+}
+
+.pro-photo>img {
+    width: 500px;
+    height: 350px;
+    object-fit: cover;
+    transition: ease-in-out .8s;
+}
+ 
+.pro-photo>img:hover {
+    transform: scale(1.2 , 1.2);
+}
+
+.pro-word>h2 {
+    letter-spacing: 10px;
+    font-size: 70px;
+    font-weight: 800;
+    margin: 0 0 80px;
+}
+
+.pro-word>h3 {
+    font-size: 30px;
+    font-weight: 600;
+    letter-spacing: 3px;
+}
+
+.pro-word>p {
+    line-height: 28px;
+    font-weight: 200;
+    font-size: 15px;
+    width: 350px;
+}
+
+.pro-word>a button {
+    border: none;
+    background-color: #EE5840;
+    width: 100px;
+    height: 50px;
+    color: #fff;
+    font-weight: 700;
+    font-size: 20px;
+    letter-spacing: 3px;
+    border-radius: 25px 10px;
+    transition: ease-in-out .3s;
+    cursor: pointer;   
+}
+
+.pro-word>a button:hover {
+    background-color: #65bac5;
+    box-shadow: 0px 5px 20px rgba(185, 5, 5, 0.1);
+}
+
+/* ----------------------interface , product */
+
+.interface {
+    padding: 120px 0 0;
+    text-align: center;
+}
+
+.product {
+    padding: 120px 0 200px;
+    text-align: center;
+}
+
+.sec-tit {
+    letter-spacing: 10px;
+    font-size: 65px;
+    font-weight: 800;
+}
+
+.sec-box {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+.sec-item {
+    width: 350px;
+    height: 250px;
+    transition: ease-in-out .3s;
+    overflow: hidden;
+    margin: 10px;
+    position: relative;
+}
+
+.sec-item>img {
+    width: 350px;
+    height: 250px;
+    object-fit: cover;
+    background-color: #fcfcfc;
+}
+
+.card {
+    background-color: rgba(66, 66, 66, 0.8);
+    width: 350px;
+    height: 250px;
+    transition: ease-in-out .3s;
+    color: #fff;
+    filter: blur(50%);
+    position: absolute;
+    text-align: left;
+    top: 0;
+    border-radius: 20px;
+    transition: ease-in-out .3s;
+    transform: translateY(75%);
+}
+
+.text {
+    transition: ease-in-out .2s;
+    position: absolute;
+    width: 350px;
+    height: 250px;
+    transform: translateY(0);
+}
+
+.card:hover .text {
+    transform: translateY(50px);
+}
+
+.card:hover {
+    background-color: rgba(66, 66, 66);
+    transform: translateY(0);
+    border-radius: 0;
+}
+
+.text > h3 {
+    font-size: 25px;
+    font-weight: 400;
+    letter-spacing: 2px;
+    padding: 12px 20px;
+    color: #fff;
+}
+
+.text > p {
+    line-height: 28px;
+    font-weight: 200;
+    font-size: 15px;
+    padding: 0 20px 10px;
+    margin: 0;
+    transition: ease-in-out .3s;
+}
+
+.text>a button {
+    border: none;
+    background-color: #EE5840;
+    width: 80px;
+    height: 50px;
+    color: #fff;
+    font-weight: 700;
+    font-size: 20px;
+    letter-spacing: 3px;
+    margin: 10px 20px;
+    border-radius: 25px 10px;
+    transition: ease-in-out .3s;
+    cursor: pointer;
+}
+
+.text>a button:hover {
+    background-color: #65bac5;
+}
+
+/* -----------------------footer */
+
+footer {
+    background-color: #65bac5;
+    color: #fff;
+    font-family: 'Rajdhani', sans-serif;
+    text-align: center;
+    letter-spacing: 1px;
+}
+
+footer > ul {
+    width: 250px;
+    margin: 0 auto;
+    padding: 50px 0 0 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    list-style: none;
+}
+
+.fa-lg {
+    transition: ease-in-out .2s;
+    cursor: pointer;
+}
+
+.fa-lg:hover {
+    color: #000;
+    text-shadow: 5px 5px 10px rgba(0, 0, 0, .2);
+}
+
+footer > button {
+    padding: 20px 50px;
+    margin: 50px 0;
+    color: #fff;
+    font-size: 20px;
+    font-family: 'Ubuntu', sans-serif;
+    font-weight: 500;
+    letter-spacing: 3px;
+    border: none;
+    background-color: #65bac5;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.2) , -5px -5px 10px rgba(255, 255, 255, .2);
+    transition: ease-in-out .5s;
+    cursor: pointer;
+}
+
+footer>button:hover {
+    box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.3);
+    background-color: #fff;
+    color: #65bac5;
+}
+
+footer > p {
+    margin: 0;
+    padding: 5px 0;
+    background-color: #61acb6;
+}
+
+footer > p::before {
+    content: '©';
+}
+
+
+
+

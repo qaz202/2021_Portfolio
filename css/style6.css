@@ -1,0 +1,424 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@100;300;400;500;700;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Rajdhani:wght@300;400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;400&display=swap');
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'Noto Sans TC', sans-serif;
+    margin: 0;
+}
+
+img {
+    object-fit: cover;
+}
+
+/* -----------------------------navbar */
+
+.navbar {
+    background-color: #fff;
+    position: fixed;
+    top: 0;
+    z-index: 1000;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    box-shadow: 0px 2px 20px rgba(0, 0, 0, .1);
+}
+
+.navbar>h3 {
+    padding-left: 20px;
+    letter-spacing: 5px;
+    font-weight: 400;
+    color: #66aed8;
+}
+
+ul {
+    display: flex;
+    flex-direction: row;
+}
+
+li {
+    list-style: none;
+    padding-right: 20px;
+    font-weight: 600;
+    font-size: 18px;
+}
+
+li>a {
+    text-decoration: none;
+    color: #000;
+    transition: ease-in-out .3s;
+}
+
+li>a:hover {
+    color: #66aed8;
+}
+
+.up {
+    width: 80px;
+    height: 80px;
+    border-radius: 100%;
+    background-color: #66aed8;
+    text-align: center;
+    position: fixed;
+    right: 30px;
+    bottom: 30px;
+    font-size: 30px;
+    line-height: 75px;
+    transition: ease-in-out .2s;
+}
+
+.up:hover {
+    background-color: #9ac3db;
+}
+
+.up>a {
+    transition: ease-in-out .2s;
+    color: #000;
+}
+
+/* ---------------------------header */
+
+.cover {
+    background-image: url('../img/hip-joint/liquid-cheese\ \(1\).svg');
+    background-attachment: fixed;
+    background-size: cover;
+    width: 100%;
+    height: 500px;
+    overflow: hidden;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.cover>h2 {
+    color: #fff;
+    font-size: 50px;
+    letter-spacing: 5px;
+    margin-top: 120px;
+    margin-left: 450px;
+	-webkit-animation: slide-top 1.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+	        animation: slide-top 1.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+}
+
+    @-webkit-keyframes slide-top {
+        0% {
+          -webkit-transform: translateY(100px);
+                  transform: translateY(100px);
+        }
+        100% {
+          -webkit-transform: translateY(0);
+                  transform: translateY(0);
+        }
+      }
+      @keyframes slide-top {
+        0% {
+          -webkit-transform: translateY(100px);
+                  transform: translateY(100px);
+        }
+        100% {
+          -webkit-transform: translateY(0);
+                  transform: translateY(0);
+        }
+      }
+
+
+.cover>img {
+    width: 500px;
+    height: auto;
+    position: absolute;
+}
+
+.black {
+    left: 250px;
+    top: 50px;
+    opacity: 0.1;
+    -webkit-animation: text-focus-in 1s cubic-bezier(0.550, 0.085, 0.680, 0.530) both;
+    animation: text-focus-in 1s cubic-bezier(0.550, 0.085, 0.680, 0.530) both;
+}
+
+@-webkit-keyframes text-focus-in {
+    0% {
+      -webkit-filter: blur(12px);
+              filter: blur(12px);
+      opacity: 0;
+    }
+    100% {
+      -webkit-filter: blur(0px);
+              filter: blur(0px);
+      opacity: 0.1;
+    }
+  }
+
+  @keyframes text-focus-in {
+    0% {
+      -webkit-filter: blur(12px);
+              filter: blur(12px);
+      opacity: 0;
+    }
+    100% {
+      -webkit-filter: blur(0px);
+              filter: blur(0px);
+      opacity: 0.1;
+    }
+  }
+
+.white {
+    left: 255px;
+    top: 55px;
+    opacity: 0.8;
+    -webkit-animation: text-focus-in2 1s cubic-bezier(0.550, 0.085, 0.680, 0.530) both;
+    animation: text-focus-in2 1s cubic-bezier(0.550, 0.085, 0.680, 0.530) both;
+}
+
+@-webkit-keyframes text-focus-in2 {
+    0% {
+      -webkit-filter: blur(12px);
+              filter: blur(12px);
+      opacity: 0;
+    }
+    100% {
+      -webkit-filter: blur(0px);
+              filter: blur(0px);
+      opacity: 0.8;
+    }
+  }
+
+  @keyframes text-focus-in2 {
+    0% {
+      -webkit-filter: blur(12px);
+              filter: blur(12px);
+      opacity: 0;
+    }
+    100% {
+      -webkit-filter: blur(0px);
+              filter: blur(0px);
+      opacity: 0.8;
+    }
+  }
+
+
+
+
+
+/* ----------------------------------section */
+
+section {
+    margin: 0 300px;
+}
+
+.item {
+    padding-top: 120px;
+    text-align: center;
+}
+
+.box3 {
+    padding-bottom: 150px;
+    position: relative;
+}
+
+.arrow {
+    font-size: 170px;
+}
+
+.tit-1::before {
+    content: '01';
+    color: #66aed8;
+    font-size: 45px;
+    font-family: 'Rajdhani', sans-serif;
+    font-weight: 500;
+    letter-spacing: 0;
+    margin-right: 15px;
+}
+
+.tit-2::before {
+    content: '02';
+    color: #66aed8;
+    font-size: 45px;
+    font-family: 'Rajdhani', sans-serif;
+    font-weight: 500;
+    letter-spacing: 0;
+    margin-right: 15px;
+}
+
+.tit-3::before {
+    content: '03';
+    color: #66aed8;
+    font-size: 45px;
+    font-family: 'Rajdhani', sans-serif;
+    font-weight: 500;
+    letter-spacing: 0;
+    margin-right: 15px;
+}
+
+p {
+    background-color: #f0f0f0;
+    border-radius: 5px;
+    padding: 25px 30px;
+    font-weight: 100;
+    font-size: 17px;
+    line-height: 37px;
+    margin: 0;
+    text-align: left;
+    border-left: 10px solid #66aed8;
+}
+
+.idea {
+    width: 200px;
+    height: 200px;
+    margin-top: 50px;
+}
+
+.box3>img {
+    padding: 50px 0;
+    width: 500px;
+    height: auto;
+}
+
+.line {
+    width: 150px;
+    height: 3px;
+    background-color: #66aed8;
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: end;
+    top: 380px;
+    left: 230px;
+}
+
+.line::after {
+    content: '碳纖維外殼';
+    position: absolute;
+    font-weight: 500;
+    letter-spacing: 1px;
+    font-size: 20px;
+    left: -120px;
+}
+
+.point {
+    width: 10px;
+    height: 10px;
+    border-radius: 100%;
+    background-color: #66aed8;
+}
+
+.line2 {
+    width: 100px;
+    height: 3px;
+    background-color: #66aed8;
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: end;
+    top: 700px;
+    left: 130px;
+}
+
+.line2::after {
+    content: '調節長度';
+    position: absolute;
+    font-weight: 500;
+    letter-spacing: 1px;
+    font-size: 20px;
+    left: -100px;
+}
+
+.point2 {
+    width: 10px;
+    height: 10px;
+    border-radius: 100%;
+    background-color: #66aed8;
+}
+
+.line3 {
+    width: 150px;
+    height: 3px;
+    background-color: #66aed8;
+    position: absolute;
+    display: flex;
+    align-items: center;
+    right: 145px;
+    top: 310px;
+}
+
+.line3::after {
+    content: '氣墊內裡';
+    position: absolute;
+    font-weight: 500;
+    letter-spacing: 1px;
+    font-size: 20px;
+    right: -100px;
+}
+
+.point3 {
+    width: 10px;
+    height: 10px;
+    border-radius: 100%;
+    background-color: #66aed8;
+}
+
+.line4 {
+    width: 150px;
+    height: 3px;
+    background-color: #66aed8;
+    position: absolute;
+    display: flex;
+    align-items: center;
+    right: 135px;
+    top: 580px;
+}
+
+.line4::after {
+    content: '保護束褲';
+    position: absolute;
+    font-weight: 500;
+    letter-spacing: 1px;
+    font-size: 20px;
+    right: -100px;
+}
+
+.point4 {
+    width: 10px;
+    height: 10px;
+    border-radius: 100%;
+    background-color: #66aed8;
+}
+
+.word {
+    display: flex;
+    justify-content: center;
+}
+
+.text {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 700px;
+}
+
+.text>p {
+    background-color: #f0f0f0;
+    border-radius: 0;
+    width: 200px;
+    height: 200px;
+    font-size: 17px;
+    margin: 10px;
+    text-align: left;
+    border-left: 0;
+}
+
+
+
+
+
+
+
+
